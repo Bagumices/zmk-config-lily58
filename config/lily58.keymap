@@ -68,7 +68,7 @@
         fn_1_light_down: fn_1_light_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F1>, <&macro_press>;
+            bindings = <&kp GLOBE &kp F1>, <&macro_tap>;
 
             label = "FN_1_LIGHT_UP";
         };
@@ -76,7 +76,7 @@
         fn_2_light_up: fn_2_light_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F2>, <&macro_press>;
+            bindings = <&kp GLOBE &kp F2>, <&macro_tap>;
 
             label = "FN_2_LIGHT_UP";
         };
@@ -84,7 +84,7 @@
         expand_mac_windows: expand_mac_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F3>, <&macro_press>;
+            bindings = <&kp GLOBE &kp F3>, <&macro_tap>;
 
             label = "EXPAND_MAC_WINDOWS";
         };
