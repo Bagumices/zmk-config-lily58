@@ -20,18 +20,13 @@
         };
 
         light_down_mac_os {
-            bindings = <&fn_1_light_down>;
+            bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <50 1>;
         };
 
         light_up_mac_os {
-            bindings = <&fn_2_light_up>;
+            bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <50 2>;
-        };
-
-        expand_windows_mac_os {
-            bindings = <&expand_mac_windows>;
-            key-positions = <50 3>;
         };
     };
 
@@ -61,32 +56,6 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-        };
-    };
-
-    macros {
-        fn_1_light_down: fn_1_light_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F1>, <&macro_tap>;
-
-            label = "FN_1_LIGHT_UP";
-        };
-
-        fn_2_light_up: fn_2_light_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F2>, <&macro_tap>;
-
-            label = "FN_2_LIGHT_UP";
-        };
-
-        expand_mac_windows: expand_mac_windows {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp F3>, <&macro_tap>;
-
-            label = "EXPAND_MAC_WINDOWS";
         };
     };
 
