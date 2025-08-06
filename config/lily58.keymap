@@ -44,7 +44,7 @@
         mission_control_mac_os: mission_control_mac_os {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp UP_ARROW>, <&macro_tap>;
+            bindings = <&kp LCTRL &kp UP_ARROW>, <&macro_press>;
 
             label = "MISSION_CONTROL_MAC_OS";
         };
