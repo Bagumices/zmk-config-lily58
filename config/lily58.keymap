@@ -15,14 +15,24 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <2 3>;
+            key-positions = <50 1>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <2 3>;
+            key-positions = <50 2>;
             layers = <0>;
+        };
+
+        to_lower_layer {
+            bindings = <&to 2>;
+            key-positions = <50 3>;
+        };
+
+        to_upper_layer {
+            bindings = <&to 3>;
+            key-positions = <50 4>;
         };
     };
 
@@ -95,18 +105,6 @@
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
         };
-
-        en: en {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_wait_time 10>,
-                <&to_ru>,
-                <&macro_wait_time 10>;
-
-            label = "EN";
-        };
     };
 
     keymap {
@@ -127,8 +125,6 @@
 &kp LCTRL   &kp Z   &kp X   &kp C        &kp V     &kp B     &kp LBKT     &kp RBKT  &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp BACKSLASH
                             &lt 2 TILDE  &kp LALT  &kp LGUI  &kp SPACE    &kp RET   &lt 3 DELETE  &kp BSPC  &lt 3 GRAVE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         ru {
