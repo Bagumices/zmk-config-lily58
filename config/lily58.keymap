@@ -133,14 +133,12 @@
 
         ru {
             bindings = <
-&kp ESC     &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                     &kp N6              &kp N7                     &kp N8               &kp N9              &kp N0               &kp EQUAL
-&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
-&kp LSHIFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
-&kp LCTRL   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp LBKT     &kp RBKT  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
-                                                           &lt 2 TILDE         &kp LALT            &kp LGUI            &kp SPACE    &kp RET   &lt 3 DELETE        &kp BSPC                   &lt 3 GRAVE
+&kp ESC     &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                    &kp N6              &kp N7                                           &kp N8                                 &kp N9              &kp N0               &kp EQUAL
+&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &mt RU_CYRILLIC_SHCHA RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
+&kp LSHIFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL                     &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
+&kp LCTRL   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                  &kp LBKT     &kp RBKT  &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE                     &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
+                                                           &lt 2 TILDE         &kp LALT            &kp LGUI                           &kp SPACE    &kp RET   &lt 3 DELETE        &kp BSPC                                         &lt 3 GRAVE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
