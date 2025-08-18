@@ -195,10 +195,10 @@
 
         symbol_layer {
             bindings = <
-&mt TILDE GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR                     &kp RPAR                       &mt UNDER RU_MINUS
-&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt RU_PLUS RU_EQUAL
-&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt COLON RU_SEMI            &mt DQT APOS                   &mt PIPE RU_BSLH
-&trans           &trans           &trans  &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans     &mt LT RU_COMMA              &mt GT RU_DOT                  &mt QUESTION RU_SLASH
+&mt TILDE GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR                     &kp RPAR                       &mt UNDER MINUS
+&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt PLUS EQUAL
+&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt COLON SEMI               &mt DQT APOS                   &mt PIPE NUBS
+&trans           &trans           &trans  &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans     &mt LT COMMA                 &mt GT DOT                     &mt QUESTION FSLH
                                           &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans
             >;
         };
