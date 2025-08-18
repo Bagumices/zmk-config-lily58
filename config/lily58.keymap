@@ -140,18 +140,18 @@
 &kp ESC         &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                               &kp N6        &kp N7    &kp N8       &kp N9   &kp N0    &kp EQUAL
 &kp TAB         &kp Q   &kp W   &kp E      &kp R     &kp T                                                &kp Y         &kp U     &kp I        &kp O    &kp P     &kp MINUS
 &kp CAPS        &kp A   &kp S   &kp D      &kp F     &kp G                                                &kp H         &kp J     &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &lt 2 LEFT_BRACKET    &lt 4 RIGHT_BRACKET  &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &lt 4 LEFT_BRACKET    &lt 2 RIGHT_BRACKET  &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp BACKSLASH
                                 &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE             &kp RET              &lt 3 DELETE  &kp BSPC  &lt 3 GRAVE
             >;
         };
 
         ru {
             bindings = <
-&kp ESC     &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                     &kp N6              &kp N7               &kp N8              &kp N9              &kp N0               &kp EQUAL
-&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &sh_scha            &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
-&kp LSHIFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
-&kp LCTRL   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp LBKT     &kp RBKT  &kp RU_CYRILLIC_TE  &soft_hard_sign      &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
-                                                           &lt 2 TILDE         &kp LALT            &kp LGUI            &kp SPACE    &kp RET   &lt 3 DELETE        &kp BSPC             &lt 3 GRAVE
+&kp ESC     &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                         &kp N6              &kp N7               &kp N8              &kp N9              &kp N0               &kp EQUAL
+&kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &sh_scha            &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
+&kp LSHIFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                             &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
+&kp LCTRL   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &lt 4 LEFT_BRACKET    &lt 2 RIGHT_BRACKET  &kp RU_CYRILLIC_TE  &soft_hard_sign      &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
+                                                           &lt 2 TILDE         &kp LALT            &kp LGUI            &kp SPACE             &kp RET              &lt 3 DELETE        &kp BSPC             &lt 3 GRAVE
             >;
         };
 
@@ -164,11 +164,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &mission_control_mac_os  &trans          &trans                       &trans     &trans     &trans     &trans    &kp C_VOL_DN  &kp C_VOL_UP
-&kp F1    &kp F2                &kp F3                &kp F4                   &kp F5          &kp F6                       &kp F7     &kp F8     &kp F9     &kp F10   &kp F11       &kp F12
-&trans    &trans                &trans                &trans                   &trans          &trans                       &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR      &kp TILDE
-&kp EXCL  &kp QMARK             &kp SEMI              &kp COLON                &kp UNDERSCORE  &kp COMMA  &trans    &trans  &trans     &kp MINUS  &kp PLUS   &kp LBRC  &kp RBRC      &kp PIPE
-                                                      &trans                   &trans          &trans     &trans    &trans  &trans     &trans     &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &mission_control_mac_os  &trans  &trans                    &trans  &trans  &trans  &trans   &kp C_VOL_DN  &kp C_VOL_UP
+&kp F1  &kp F2                &kp F3                &kp F4                   &kp F5  &kp F6                    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11       &kp F12
+&trans  &trans                &trans                &trans                   &trans  &trans                    &trans  &trans  &trans  &trans   &trans        &trans
+&trans  &trans                &trans                &trans                   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans        &trans
+                                                    &trans                   &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -195,11 +195,11 @@
 
         symbol_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR          &kp RPAR           &kp MINUS
-&trans     &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&trans     &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &kp SEMI          &kp DQT            &kp BSLH
-&trans     &trans           &trans  &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans     &kp COMMA         &kp DOT            &kp FSLH
-                                    &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans
+&mt TILDE GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LPAR                     &kp RPAR                       &mt UNDER RU_MINUS
+&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt RU_PLUS RU_EQUAL
+&trans           &trans           &trans  &trans    &trans      &trans                       &trans     &trans         &trans     &mt COLON RU_SEMI            &mt DQT APOS                   &mt PIPE RU_BSLH
+&trans           &trans           &trans  &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans     &mt LT RU_COMMA              &mt GT RU_DOT                  &mt QUESTION RU_SLASH
+                                          &trans    &trans      &trans     &trans    &trans  &trans     &trans         &trans
             >;
         };
     };
