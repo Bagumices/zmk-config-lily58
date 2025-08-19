@@ -79,7 +79,7 @@
         ru_space: ru_space {
             compatible = "zmk,behavior-mod-morph";
             label = "RU_SPACE";
-            bindings = <&kp SPACE>, <&none>;
+            bindings = <&kp SPACE>, <&layer_ru>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
