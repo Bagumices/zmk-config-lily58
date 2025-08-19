@@ -14,15 +14,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        sync_layer {
-            bindings = <&tog 1>;
-            key-positions = <5 4>;
-            layers = <1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         ss_hs_modmorph: ss_hs_modmorph {
@@ -70,6 +62,24 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LG_SPACE";
             bindings = <&kp SPACE>, <&lg_tog>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        en_space: en_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EN_SPACE";
+            bindings = <&kp SPACE>, <&layer_en>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        ru_space: ru_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_SPACE";
+            bindings = <&kp SPACE>, <&none>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -153,7 +163,7 @@
 &kp TAB         &kp Q   &kp W   &kp E      &kp R     &kp T                                                &kp Y         &kp U     &kp I        &kp O    &kp P     &kp MINUS
 &kp CAPS        &kp A   &kp S   &kp D      &kp F     &kp G                                                &kp H         &kp J     &kp K        &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &lt 4 LEFT_BRACKET    &lt 2 RIGHT_BRACKET  &kp N         &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp BACKSLASH
-                                &kp LCTRL  &kp LALT  &kp LGUI  &lg_space             &kp RET              &lt 3 DELETE  &kp BSPC  &lt 3 GRAVE
+                                &kp LCTRL  &kp LALT  &kp LGUI  &ru_space             &kp RET              &lt 3 DELETE  &kp BSPC  &lt 3 GRAVE
             >;
         };
 
@@ -163,7 +173,7 @@
 &kp TAB     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &sh_scha            &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
 &kp LSHIFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                             &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
 &kp LCTRL   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &lt 4 LEFT_BRACKET    &lt 2 RIGHT_BRACKET  &kp RU_CYRILLIC_TE  &soft_hard_sign      &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
-                                                           &lt 2 TILDE         &kp LALT            &kp LGUI            &lg_space             &kp RET              &lt 3 DELETE        &kp BSPC             &lt 3 GRAVE
+                                                           &lt 2 TILDE         &kp LALT            &kp LGUI            &en_space             &kp RET              &lt 3 DELETE        &kp BSPC             &lt 3 GRAVE
             >;
         };
 
