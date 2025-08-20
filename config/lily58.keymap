@@ -141,8 +141,8 @@
 &kp ESC         &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                          &kp N6      &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
 &kp TAB         &kp Q   &kp W   &kp E      &kp R     &kp T                           &kp Y       &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp CAPS        &kp A   &kp S   &kp D      &kp F     &kp G                           &kp H       &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &ru_space    &kp RET  &kp N       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                                &kp LCTRL  &kp LALT  &kp LGUI  &trans       &mo 2    &kp DELETE  &kp BSPC  &trans
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &mo 2        &trans   &kp N       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                                &kp LCTRL  &kp LALT  &kp LGUI  &ru_space    &kp RET  &kp DELETE  &kp BSPC  &mo 4
             >;
         };
 
@@ -151,8 +151,28 @@
 &kp ESC       &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                    &kp N6              &kp N7               &kp N8              &kp N9              &kp N0               &kp EQUAL
 &kp TAB       &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &sh_scha            &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA   &kp MINUS
 &kp CAPSLOCK  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL  &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE  &kp SQT
-&kp LSHIFT    &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &en_space    &kp RET  &kp RU_CYRILLIC_TE  &soft_hard_sign      &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
-                                                             &kp LCTRL           &kp LALT            &kp LGUI            &trans       &mo 2    &kp DELETE          &kp BSPC             &trans
+&kp LSHIFT    &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &mo 3        &trans   &kp RU_CYRILLIC_TE  &soft_hard_sign      &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp FSLH             &kp BACKSLASH
+                                                             &kp LCTRL           &kp LALT            &kp LGUI            &en_space    &kp RET  &kp DELETE          &kp BSPC             &mo 4
+            >;
+        };
+
+        sym_en {
+            bindings = <
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT                         &kp CARET      &kp AMPERSAND   &kp ASTERISK     &kp LPAR          &kp RPAR           &kp KP_MINUS
+&trans  &trans    &trans  &trans    &kp LESS_THAN  &kp GREATER_THAN                    &kp COLON      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDERSCORE
+&trans  &trans    &trans  &trans    &trans         &trans                              &kp SEMICOLON  &kp DQT         &kp SQT          &kp BSLH          &kp PIPE           &kp KP_EQUAL
+&trans  &trans    &trans  &trans    &trans         &trans            &trans    &trans  &kp GRAVE      &kp TILDE       &kp COMMA        &kp KP_DOT        &kp QMARK          &kp KP_PLUS
+                          &trans    &trans         &trans            &trans    &trans  &trans         &trans          &trans
+            >;
+        };
+
+        sym_ru {
+            bindings = <
+&trans  &kp RU_EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR     &kp RU_PERCENT                      &kp CARET         &kp AMPERSAND         &kp RU_ASTERISK  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS
+&trans  &trans              &trans  &trans    &kp LESS_THAN  &kp GREATER_THAN                    &kp RU_COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp RU_UNDERSCORE
+&trans  &trans              &trans  &trans    &trans         &trans                              &kp RU_SEMICOLON  &kp RU_DOUBLE_QUOTES  &kp SQT          &kp RU_BACKSLASH         &kp PIPE                  &kp RU_EQUAL
+&trans  &trans              &trans  &trans    &trans         &trans            &trans    &trans  &kp GRAVE         &kp TILDE             &kp RU_COMMA     &kp RU_DOT               &kp RU_QUESTION           &kp RU_PLUS
+                                    &trans    &trans         &trans            &trans    &trans  &trans            &trans                &trans
             >;
         };
 
