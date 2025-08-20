@@ -124,6 +124,18 @@
             bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
         };
+
+        en: en {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 10>,
+                <&to_ru>,
+                <&macro_wait_time 10>;
+
+            label = "EN";
+        };
     };
 
     keymap {
@@ -168,10 +180,10 @@
 
         sym_ru {
             bindings = <
-&trans  &kp RU_EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR     &kp RU_PERCENT                      &kp CARET         &kp AMPERSAND         &kp RU_ASTERISK  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS
-&trans  &trans              &trans  &trans    &kp LESS_THAN  &kp GREATER_THAN                    &kp RU_COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET         &kp RIGHT_BRACKET         &kp RU_UNDERSCORE
-&trans  &trans              &trans  &trans    &trans         &trans                              &kp RU_SEMICOLON  &kp RU_DOUBLE_QUOTES  &kp SQT          &kp RU_BACKSLASH         &kp PIPE                  &kp RU_EQUAL
-&trans  &trans              &trans  &trans    &trans         &trans            &trans    &trans  &kp GRAVE         &kp TILDE             &kp RU_COMMA     &kp RU_DOT               &kp RU_QUESTION           &kp RU_PLUS
+&trans  &kp RU_EXCLAMATION  &en AT  &en HASH  &en DOLLAR     &kp RU_PERCENT                      &en CARET         &en AMPERSAND         &kp RU_ASTERISK  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS
+&trans  &trans              &trans  &trans    &en LESS_THAN  &en GREATER_THAN                    &kp RU_COLON      &en LEFT_BRACE        &kp RIGHT_BRACE  &en LEFT_BRACKET         &en RIGHT_BRACKET         &kp RU_UNDERSCORE
+&trans  &trans              &trans  &trans    &trans         &trans                              &kp RU_SEMICOLON  &kp RU_DOUBLE_QUOTES  &en SQT          &kp RU_BACKSLASH         &en PIPE                  &kp RU_EQUAL
+&trans  &trans              &trans  &trans    &trans         &trans            &trans    &trans  &en GRAVE         &en TILDE             &kp RU_COMMA     &kp RU_DOT               &kp RU_QUESTION           &kp RU_PLUS
                                     &trans    &trans         &trans            &trans    &trans  &trans            &trans                &trans
             >;
         };
