@@ -171,8 +171,8 @@
         sym_en {
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT                         &kp CARET      &kp AMPERSAND   &kp ASTERISK     &kp LPAR          &kp RPAR           &kp KP_MINUS
-&trans  &trans    &trans  &trans    &kp LESS_THAN  &kp GREATER_THAN                    &kp COLON      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDERSCORE
-&trans  &trans    &trans  &trans    &trans         &trans                              &kp SEMICOLON  &kp DQT         &kp SQT          &kp BSLH          &kp PIPE           &kp KP_EQUAL
+&trans  &trans    &trans  &kp PIPE  &kp LESS_THAN  &kp GREATER_THAN                    &kp COLON      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDERSCORE
+&trans  &trans    &trans  &trans    &trans         &trans                              &kp SEMICOLON  &kp DQT         &kp SQT          &kp FSLH          &kp BSLH           &kp KP_EQUAL
 &trans  &trans    &trans  &trans    &trans         &trans            &trans    &trans  &kp GRAVE      &kp TILDE       &kp COMMA        &kp KP_DOT        &kp QMARK          &kp KP_PLUS
                           &trans    &trans         &trans            &trans    &trans  &trans         &trans          &trans
             >;
@@ -180,10 +180,10 @@
 
         sym_ru {
             bindings = <
-&trans  &kp RU_EXCLAMATION  &en AT  &en HASH  &en DOLLAR     &kp PERCENT                         &en CARET     &en AMPERSAND         &kp STAR      &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS
-&trans  &trans              &trans  &en PIPE  &en LESS_THAN  &en GREATER_THAN                    &kp RU_COLON  &en LEFT_BRACE        &en RBRC      &en LEFT_BRACKET         &en RIGHT_BRACKET         &kp RU_UNDERSCORE
-&trans  &trans              &trans  &trans    &trans         &trans                              &kp RU_SEMI   &kp RU_DOUBLE_QUOTES  &en SQT       &kp RU_FSLH              &kp RU_BSLH               &kp RU_EQUAL
-&trans  &trans              &trans  &trans    &trans         &trans            &trans    &trans  &en GRAVE     &en TILDE             &kp RU_COMMA  &kp RU_DOT               &kp RU_QUESTION           &kp RU_PLUS
+&trans  &kp RU_EXCLAMATION  &en AT  &en HASH  &en DOLLAR     &en PERCENT                         &en CARET     &en AMPERSAND         &en STAR      &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS
+&trans  &trans              &trans  &en PIPE  &en LESS_THAN  &en GREATER_THAN                    &en RU_COLON  &en LEFT_BRACE        &en RBRC      &en LEFT_BRACKET         &en RIGHT_BRACKET         &kp RU_UNDERSCORE
+&trans  &trans              &trans  &trans    &trans         &trans                              &en RU_SEMI   &kp RU_DOUBLE_QUOTES  &en SQT       &en RU_FSLH              &en RU_BSLH               &kp RU_EQUAL
+&trans  &trans              &trans  &trans    &trans         &trans            &trans    &trans  &en GRAVE     &en TILDE             &en RU_COMMA  &en RU_DOT               &en RU_QUESTION           &kp RU_PLUS
                                     &trans    &trans         &trans            &trans    &trans  &trans        &trans                &trans
             >;
         };
